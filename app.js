@@ -173,14 +173,16 @@ async function run() {
    *      the recipes.
    */
 
-  console.log("Delete documents example");
 
   const deleteQuery = { name: { $in: ["elotes", "fried rice"] } };
+  try {
+    const deleteResult = await collection.deleteMany(deleteQuery);
+    console.log(`Deleted ${deleteResult.deletedCount} documents`);
+  } catch (err) {
+    console.error(`Something went wrong trying to delete documents: ${err}`);
+  }
 
-  const deleteResult = await collection.deleteMany(deleteQuery);
-
-  console.log(`Deleted ${deleteResult.deletedCount} documents\n`);
-
+  // Make sure to call close() on your client to perform cleanup operations
   await client.close();
 }
 run().catch(console.dir);
