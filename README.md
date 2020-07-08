@@ -90,7 +90,7 @@ contents of the `app.js` file.
 1. Click the Run icon, or from the Run menu, choose **Start Debugging**.
 
 Assuming you have the correct connection string, you have now connected 
-the C# app to your MongoDB Atlas datastore.
+the Node app to your MongoDB Atlas datastore.
 Have fun modifying the code to experiment with the C# driver and MongoDB.
 
 ## Troubleshooting
