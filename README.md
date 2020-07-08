@@ -91,7 +91,7 @@ contents of the `app.js` file.
 
 Assuming you have the correct connection string, you have now connected 
 the Node app to your MongoDB Atlas datastore.
-Have fun modifying the code to experiment with the C# driver and MongoDB.
+Have fun modifying the code to experiment with the Node driver and MongoDB.
 
 ## Troubleshooting
 
