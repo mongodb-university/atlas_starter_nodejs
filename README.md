@@ -97,6 +97,6 @@ Have fun modifying the code to experiment with the Node driver and MongoDB.
 
 Are you having trouble getting connected to your MongoDB Atlas instance? Double-check the following:
 
-1. Have you replaced the `uri` variable with a valid connection string provided by the Atlas UI?
+1. Have you replaced the `uri` variable with a valid connection string provided by the Atlas UI?  Read more [here](https://docs.atlas.mongodb.com/driver-connection/) for further context.
 
 2. Have you [added your current IP address to the access list](https://docs.atlas.mongodb.com/security-whitelist/) in the Atlas UI?
