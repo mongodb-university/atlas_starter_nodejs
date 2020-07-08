@@ -88,7 +88,7 @@ async function run() {
     },
   ];
 
-  collection
+const result = await collection
     .insertMany(recipes)
     .then(result =>
       console.log(`${result.insertedCount} documents successfully inserted.`),
@@ -112,7 +112,7 @@ async function run() {
 
   try {
     const cursor = await collection.find(findQuery).sort({ name: 1 });
-    await cursor.forEach(recipe =>
+    cursor.forEach(recipe =>
       console.log(
         `${recipe.name} has ${recipe.ingredients.length} ingredients and takes ${recipe.prepTimeInMinutes} minutes to make`,
       ),
