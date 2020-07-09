@@ -35,23 +35,17 @@ this project as a ZIP archive,
 Navigate to the directory containing the project in your shell or open it
 in your preferred IDE.
 
-Then, set up NPM for your project by running the following command which
-creates a file called `package.json`:
+Then, use the NPM dependency file that we included in the project
+directory called `package.json` to download and install your dependencies:
 
 ```shell
-npm init -y
+npm install
 ```
 
-Next, add the Node.js MongoDB driver as a dependency. Use the following
-command to instruct NPM to download and install the `mongodb` package.
-
-```shell
-npm install mongodb
-```
-
-This command downloads and saves the dependencies required in a directory
-called `node_modules` in your project directory and records dependency
-information in the `package.json` file you generated in the previous step.
+This command reads the `package.json` file and downloads and saves the
+dependencies defined within it to a directory called `node_modules`. It
+also creates a `package-lock.json` file that sets the version information for
+each of the modules required to build your project.
 
 At this point, you should have appropriate versions of Node.js and NPM 
 installed as well as a project directory that contains the dependencies you 
