@@ -32,7 +32,7 @@ async function run() {
   /*
    *  *** INSERT DOCUMENTS ***
    *
-   * You can insert individual documents using collection.insert().
+   * You can insert individual documents using collection.insertOne().
    * In this example, we're going to create four documents and then
    * insert them all in one call with collection.insertMany().
    */
